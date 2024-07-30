@@ -1,0 +1,60 @@
+/* styles/RecentTransactions.css */
+.custDash-recent-transactions {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .custDash-recent-transactions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .custDash-view-all {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .custDash-transaction-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .custDash-transaction-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .custDash-transaction-icon {
+    background-color: #FF8E53;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+  }
+  
+  .custDash-transaction-details {
+    flex-grow: 1;
+  }
+  
+  .custDash-transaction-name {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .custDash-transaction-date {
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+  .custDash-transaction-amount {
+    font-weight: bold;
+  }

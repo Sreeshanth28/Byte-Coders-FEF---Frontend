@@ -1,0 +1,68 @@
+/* styles/Statistics.css */
+.custDash-statistics {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .custDash-statistics-title {
+    margin-bottom: 15px;
+  }
+  
+  .custDash-statistics-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+  }
+  
+  .custDash-statistics-period {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .custDash-graph {
+    margin-bottom: 20px;
+  }
+  
+  .custDash-graph-placeholder {
+    height: 200px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+  }
+  
+  .custDash-statistics-summary {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .custDash-statistic {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .custDash-statistic-label {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .custDash-statistic-value {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .custDash-statistic-change {
+    font-size: 0.9rem;
+  }
+  
+  .custDash-statistic-change.positive {
+    color: green;
+  }
+  
+  .custDash-statistic-change.negative {
+    color: red;
+  }

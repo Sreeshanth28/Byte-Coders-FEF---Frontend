@@ -1,0 +1,115 @@
+.userdetails-input, .userdetails-button {
+  width: 100%;
+  height: 40px; 
+  position: relative;
+  padding: 10px;
+  border: 0.1px solid #575cb5;
+}
+
+.userdetails-button {
+  width: 220px !important;
+  height: 60px !important;
+  background: #6d74e3;
+  border: none;
+}
+
+.userdetails-wrapper {
+  position: relative;
+  transform: skewY(-14deg);
+}
+
+.userdetails-wrapper li, .userdetails-button {
+  position: relative;
+  list-style: none;
+  width: 200px;
+  z-index: var(--i);
+  transition: 0.3s;
+  color: white;
+}
+
+.userdetails-wrapper li::before, .userdetails-button::before {
+  position: absolute;
+  content: '';
+  background: #6d74e3;
+  top: 0;
+  left: -40px;
+  width: 40px;
+  height: 60px;
+  transform-origin: right;
+  transform: skewY(45deg);
+  transition: 0.3s;
+}
+
+.userdetails-wrapper li::after, .userdetails-button::after {
+  position: absolute;
+  content: '';
+  background: #6d74e3;
+  width: 220px;
+  height: 40px;
+  top: -40px;
+  left: 0;
+  transform-origin: bottom;
+  transform: skewX(45deg);
+  transition: 0.3s;
+}
+
+.userdetails-wrapper li:nth-child(1)::after, .userdetails-wrapper li:nth-child(1)::before {
+  background-color: #d8daf7;
+}
+
+.userdetails-wrapper li:nth-child(2)::after, .userdetails-wrapper li:nth-child(2)::before {
+  background-color: #c2c5f3;
+}
+
+.userdetails-wrapper li:nth-child(3)::after, .userdetails-wrapper li:nth-child(3)::before {
+  background-color: #989deb;
+}
+
+.userdetails-wrapper li .userdetails-input {
+  outline: none;
+  border: none;
+  color: black;
+}
+
+.userdetails-wrapper li .userdetails-input::placeholder {
+  color: black;
+}
+
+.userdetails-wrapper li:nth-child(1) .userdetails-input {
+  background: #d8daf7;
+}
+
+.userdetails-wrapper li:nth-child(2) .userdetails-input {
+  background: #c2c5f3;
+}
+
+.userdetails-wrapper li:nth-child(3) .userdetails-input {
+  background: #989deb;
+}
+
+.userdetails-wrapper li:nth-child(1) .userdetails-input:focus {
+  outline: none;
+  border: 3.5px solid #d8daf7;
+}
+
+.userdetails-wrapper li:nth-child(2) .userdetails-input:focus {
+  outline: none;
+  border: 3.5px solid #c2c5f3;
+}
+
+.userdetails-wrapper li:nth-child(3) .userdetails-input:focus {
+  outline: none;
+  border: 3.5px solid #989deb;
+}
+
+.userdetails-wrapper li:hover, .userdetails-button:hover {
+  transform: translateX(-20px);
+}
+
+.userdetails-button:hover, .userdetails-button:hover::before, .userdetails-button:hover::after {
+  background: #575cb5;
+}
+
+.userdetails-button:active {
+  transform: translateX(0px);
+}

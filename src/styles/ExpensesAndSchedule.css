@@ -1,0 +1,78 @@
+/* styles/ExpensesAndSchedule.css */
+.custDash-expenses-and-schedule {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 20px;
+  }
+  
+  .custDash-top-expenses, .custDash-payment-schedule {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .custDash-expense-chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 200px;
+    margin-top: 20px;
+  }
+  
+  .custDash-expense-bar {
+    width: 30%;
+    background-color: #007bff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .custDash-expense-label {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    margin-bottom: 10px;
+  }
+  
+  .custDash-expense-amount {
+    font-weight: bold;
+  }
+  
+  .custDash-schedule-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .custDash-schedule-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .custDash-schedule-date {
+    width: 40px;
+    height: 40px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 15px;
+  }
+  
+  .custDash-schedule-details {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  
+  .custDash-schedule-amount {
+    font-weight: bold;
+  }

@@ -1,0 +1,39 @@
+.custDash-sidebar {
+    width: 250px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .custDash-sidebar h1 {
+    margin-bottom: 20px;
+  }
+  
+  .custDash-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .custDash-sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .custDash-sidebar a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .custDash-logoutButton {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }

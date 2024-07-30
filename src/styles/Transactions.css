@@ -1,0 +1,327 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.transactionsPage-heading {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.transactionsPage-tagline {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .transactionsPage-container {
+    padding: 20px;
+  }
+  
+  .transactionsPage-toggle-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .checkbox {
+    width: 223px;
+    height: 60px;
+    background-color: #d0d0d0;
+    border-radius: 30px;
+    position: relative;
+    color: black;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  #checkbox_toggle {
+    display: none;
+  }
+  
+  .checkbox .toggle {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    border-radius: 30px;
+    left: 5px;
+    cursor: pointer;
+    background: linear-gradient(40deg, #FF0080, #FF8C00 70%);
+    transition: 0.4s;
+    box-shadow: 0px 0px 3px rgb(255, 255, 20), 0px 0px 5px rgb(255, 255, 20);
+  }
+  
+  .checkbox .slide {
+    width: 230px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+  }
+  
+  .checkbox .slide .text {
+    font-size: 16px;
+    font-weight: 700;
+    z-index: 100;
+    cursor: pointer;
+  }
+  
+  .check:checked + .checkbox .slide .toggle {
+    transform: translateX(113px);
+    background: linear-gradient(40deg, #8983F7, #A3DAFB 70%);
+    box-shadow: -0px -0px 10px #8983F7, -0px -0px 3px #8983F7;
+  }
+  
+  .check:checked + .checkbox .slide {
+    background-color: #0a1929;
+    color: #fff;
+  }
+  
+  .transactionsPage-loan-cards {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .transactionsPage-cards-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    margin: auto 10vw;
+  }
+  
+  .transactionsPage-cards-container::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+  
+  .transactionsPage-scroll-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+    opacity: 0.7;
+  }
+  
+  .transactionsPage-scroll-btn.transactionsPage-left {
+    left: 10px;
+  }
+  
+  .transactionsPage-scroll-btn.transactionsPage-right {
+    right: 10px;
+  }
+  
+  .transactionsPage-card {
+    min-width: 15vw;
+    height: 300px;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    transition: all 0.4s;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .transactionsPage-card:hover {
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #feb47b, #ff7e5f);
+  }
+  
+  .transactionsPage-first-content {
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 15px;
+    color: #fff;
+  }
+  
+  .transactionsPage-card:hover .transactionsPage-first-content {
+    height: 0px;
+    opacity: 0;
+  }
+  
+  .transactionsPage-second-content {
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.4s;
+    font-size: 0px;
+    transform: rotate(90deg) scale(-1);
+    color: #fff;
+  }
+  
+  .transactionsPage-card:hover .transactionsPage-second-content {
+    opacity: 1;
+    height: 100%;
+    font-size: 1rem;
+    transform: rotate(0deg);
+  }
+  
+  .transactionsPage-transactions-list {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .transactionsPage-search-input {
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-left: 53.4vw;
+    margin-top: 5vh;
+    display: block;
+  }
+
+  .transactionsPage-search-input-loans{
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5vh;
+    display: block;
+    margin: 5vh auto;
+  }
+
+  .transactionsPage-no-loans{
+    margin: auto;
+    font-size: 30px;
+    color: #feb47b;
+    }
+  .transactionsPage-transaction-list {
+    list-style: none;
+  }
+  
+  .transactionsPage-transaction-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .transactionsPage-transaction-icon {
+    background-color: #FF8E53;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+  }
+  
+  .transactionsPage-transaction-details {
+    flex-grow: 1;
+  }
+  
+  .transactionsPage-transaction-name {
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 5px;
+  }
+  
+  .transactionsPage-transaction-date {
+    color: #888;
+    font-size: 0.8rem;
+  }
+  
+  .transactionsPage-transaction-amount {
+    color: #333;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .transactionsPage-card {
+      width: 120px;
+      height: 180px;
+      font-size: 18px;
+    }
+  
+    .transactionsPage-transaction-item {
+      padding: 8px 0;
+    }
+  
+    .transactionsPage-transaction-icon {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .transactionsPage-transaction-name {
+      font-size: 0.8rem;
+    }
+  
+    .transactionsPage-transaction-date {
+      font-size: 0.7rem;
+    }
+  
+    .transactionsPage-transaction-amount {
+      font-size: 0.8rem;
+    }
+  }
+  
+
+  .transactionsPage-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .transactionsPage-pagination button {
+    background-color: #FF8E53;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .transactionsPage-pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .transactionsPage-pagination span {
+    font-weight: bold;
+  }
+
+  .transactionsPage-transaction-type {
+    font-size: 0.8em;
+    color: #666;
+    margin-left: 10px;
+  }

@@ -1,0 +1,123 @@
+/* CustomerDashboard.css */
+.custDash-dashboard {
+  position: relative;
+  z-index: 1001;
+  font-family: Arial, sans-serif;
+  /* max-width: 75vw; */
+  margin: 1vh 1vw auto 20em;
+  background-color: #c3e0df;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.custDash-container {
+  padding: 20px;
+}
+
+.custDash-navbar {
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: white;
+  padding: 10px 20px;
+}
+
+.custDash-navbar h1 {
+  margin: 0;
+}
+
+
+.custDash-totalSpent {
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.custDash-totalSpent h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.custDash-filterSelect {
+  margin-left: 5px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+
+.custDash-amount {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.custDash-transactionTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.custDash-transactionTable th,
+.custDash-transactionTable td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.custDash-transactionTable th {
+  background-color: #f2f2f2;
+}
+
+.custDash-transactionRow {
+  background-color: white;
+}
+
+.custDash-transactionRow:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.custDash-failedTransaction {
+  color: red;
+}
+
+.custDash-filters {
+  margin-bottom: 20px;
+}
+
+.custDash-filterSelect {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.custDash-transactionTable th {
+  cursor: pointer;
+}
+
+.custDash-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.custDash-pagination button {
+  padding: 8px 16px;
+  margin: 0 10px;
+  background-color: #4a00e0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.custDash-pagination button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.custDash-pagination span {
+  font-size: 16px;
+}

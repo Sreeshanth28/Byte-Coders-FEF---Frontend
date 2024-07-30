@@ -1,0 +1,39 @@
+/* styles/Dashboard.css */
+.custDash-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .custDash-header {
+    margin-bottom: 20px;
+  }
+  
+  .custDash-main {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .custDash-left-column {
+    flex: 1;
+  }
+  
+  .custDash-right-column {
+    flex: 1;
+  }
+  
+  .custDash-account-summary {
+    grid-column: 1 / -1;
+  }
+  
+  .custDash-statistics {
+    grid-column: 1 / -1;
+  }
+  
+  .custDash-recent-transactions {
+    /* Styles for recent transactions */
+  }
+  
+  .custDash-expenses-and-schedule {
+    /* Styles for expenses and schedule */
+  }

@@ -1,0 +1,179 @@
+.bnplHist-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .bnplHist-heading {
+    text-align: center;
+    color: #333;
+  }
+  
+  .bnplHist-search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .bnplHist-transactions-list {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bnplHist-transaction-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .bnplHist-transaction-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .bnplHist-transaction-icon {
+    background-color: #FF8E53;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    font-weight: bold;
+  }
+  
+  .bnplHist-transaction-details {
+    flex-grow: 1;
+  }
+  
+  .bnplHist-transaction-name {
+    font-weight: bold;
+    font-size: 1rem;
+    display: block;
+  }
+  
+  .bnplHist-transaction-date {
+    color: #888;
+    font-size: 0.8rem;
+  }
+  
+  .bnplHist-transaction-amount {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 15px;
+  }
+  
+  .bnplHist-transaction-status {
+    font-size: 0.8rem;
+    padding: 3px 8px;
+    border-radius: 12px;
+    text-transform: uppercase;
+  }
+  
+  .bnplHist-status-paid {
+    background-color: #e6f7e6;
+    color: #87ffa3;
+  }
+  
+  .bnplHist-status-pending {
+    background-color: #fff3cd;
+    color: #f7d674;
+  }
+  
+  .bnplHist-status-overdue {
+    background-color: #f8d7da;
+    color: #dc3545;
+  }
+  
+  .bnplHist-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .bnplHist-pagination-button {
+    background-color: #fff;
+    border: 1px solid #FF8E53;
+    color: #FF8E53;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .bnplHist-pagination-button:hover,
+  .bnplHist-pagination-button.active {
+    background-color: #FF8E53;
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .bnplHist-container {
+      padding: 10px;
+    }
+  
+    .bnplHist-transaction-item {
+      flex-wrap: wrap;
+    }
+  
+    .bnplHist-transaction-amount {
+      width: 100%;
+      text-align: right;
+      margin-top: 5px;
+    }
+  
+    .bnplHist-transaction-status {
+      width: 100%;
+      text-align: right;
+      margin-top: 5px;
+    }
+  
+    .bnplHist-pagination {
+      flex-wrap: wrap;
+    }
+  
+    .bnplHist-pagination-button {
+      margin: 5px;
+    }
+  }
+
+
+  .bnplHist-transaction-status {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .status-success {
+    background-color: #e6f4ea;
+    color: #1e7e34;
+  }
+  
+  .status-warning {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+  
+  .status-danger {
+    background-color: #f8dde0;
+    color: #721c24;
+  }
+  
+  .status-info {
+    background-color: #dbecff;
+    color: #004085;
+  }
+  
+  .status-default {
+    background-color: #f8f9fa;
+    color: #6c757d;
+  }
