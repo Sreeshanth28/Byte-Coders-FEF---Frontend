@@ -1,0 +1,108 @@
+.otpp-form {
+    width: 280px;
+    height: 340px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    gap: 20px;
+    position: relative;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.082);
+    border-radius: 15px;
+  }
+  
+  .otpp-main-heading {
+    font-size: 1.1em;
+    color: rgba(237, 101, 17, 0.899);
+    font-weight: 700;
+  }
+  
+  .otpp-subheading {
+    font-size: 1.0em;
+    color: black;
+    line-height: 17px;
+    text-align: center;
+  }
+  
+  .otpp-input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .otpp-input {
+    background-color: rgb(228, 228, 228);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 7px;
+    caret-color: rgba(237, 101, 17, 0.899);
+    color: rgb(44, 44, 44);
+    outline: none;
+    font-weight: 600;
+  }
+  
+  .otpp-input:focus,
+  .otpp-input:valid {
+    background-color: rgba(127, 129, 255, 0.199);
+    transition-duration: .3s;
+  }
+  
+  .otpp-verify-button {
+    width: 100%;
+    height: 30px;
+    border: none;
+    background-color:  rgba(237, 101, 17, 0.899);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+    transition-duration: .2s;
+  }
+  
+  .otpp-verify-button:hover {
+    background-color:  rgba(237, 101, 17, 0.899);
+    transition-duration: .2s;
+  }
+  
+  .otpp-exit-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.171);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    border: none;
+    color: black;
+    font-size: 1.1em;
+    cursor: pointer;
+  }
+  
+  .otpp-resend-note {
+    font-size: 1.0em;
+    color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .otpp-resend-btn {
+    background-color: transparent;
+    border: none;
+    color:  rgba(237, 101, 17, 0.899);
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 700;
+  }
+  
